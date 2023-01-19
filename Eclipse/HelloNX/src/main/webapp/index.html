@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Grid Layout</title>
+    <style>
+        div{
+            text-align: center;
+        }
+
+        .custom{
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: 50px 400px 50px;
+            
+        }
+        .custom > div {
+            margin: 1px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .customsys{
+            background: lightgreen;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .customer{
+            background: red;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .menu{
+            background: lightpink;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .content{
+            background: white;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+
+        .content > div{
+            background: lightgrey;
+
+        }
+        .email{
+            background: lightsalmon;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .address{
+            background: lightcyan;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        #content1 {
+            background: red;
+        }
+        #content2 {
+            background: yellow;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <hr>
+    <div class="custom">
+            <div class="customsys">영업시스템</div>
+            <div class="customer">고객관리</div>
+            <div class="menu">
+                <ul align="left">
+                        <li><a href="#">상품코드</a></li>
+                        <li><a href="#">거래처코드</a></li>
+                        <li><a href="#">도움말코드</a></li>
+                        <li><a href="HelloNX/index.html">고객 관리</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="content1">
+                    <h1>고객명단</h1>
+                    <p>안녕하세요 반갑습니다
+                        안녕하세요 "???" 님 반갑습니다
+                        
+                    </p>
+                </div>
+                <div id="content2">
+                    <h2>고객 개인정보</h2>
+                    <p>안녕하세요 반갑습니다
+                        개인 정보를 수정합니다
+                    </p>
+                </div>
+            </div>
+
+            <div class="email">email</div>
+            <div class="address">address</div>
+    </div>
+
+
+
+
+	
+</body>
+</html>
